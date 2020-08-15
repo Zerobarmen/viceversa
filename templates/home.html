@@ -18,16 +18,11 @@
   </style>
 </head>
 <body>
-		<h1> <b>Vice Versa</b> </h1>
-
-		<textarea cols="50" rows="10" name="usertext" autofocus>
-			
-		</textarea>
-
-    <p>smth</p>
-<br>
-<br>
- <input type="submit" name="" value="Reverse">
-
+		<h1> Vice Versa </h1>
+<form action="{% url 'reverse' %}">
+		<textarea cols="50" rows="10" name="usertext" autofocus></textarea>
+    <br><br>
+    <input type="submit" name="" value="Reverse!">
+</form>
 </body>
 </html>
